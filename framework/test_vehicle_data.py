@@ -6,8 +6,7 @@ from framework import vehicle_data
 
 
 class TestVehicleData(TestCase):
-
-    class Test(TestCase):
+    class TestById(TestCase):
         matrix = [
             [1, 0, 2, 3],
             [2, 0, 3, 2],
@@ -22,8 +21,10 @@ class TestVehicleData(TestCase):
 
         def len_is_2(trajectory):
             return len(trajectory) == 2
-        assert (vehicle_data.filter(len_is_2) == [ [(2, 3), (3, 2)] ])
 
         def len_is_1(trajectory):
             return len(trajectory) == 1
+
+        assert (vehicle_data.filter(len_is_2) == [ [(2, 3), (3, 2)] ])
+
         assert (vehicle_data.filter(len_is_1) == []) # only one datapoint. Got removed
