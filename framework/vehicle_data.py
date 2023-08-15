@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy
 from matplotlib import pyplot
 
@@ -40,5 +39,5 @@ class VehicleData:
         for seg in list_of_segments:
             x = list(zip(*seg))[0]
             y = list(zip(*seg))[1]
-            plt.plot(x, y)
-        plt.show()
+            pyplot.plot(x, y)
+        pyplot.show()

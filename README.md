@@ -1,7 +1,18 @@
 # VehicleData-AMAG
 
+
+# How to run it
+Download the repo.
+1. You need python3 for running the repo.
+2. Run `pip install -r requirement.txt`
+3. Modify / Write your input function inside the file `./framework/input_function.py`. 
+And change the line from `input_function = len_is_69` to `input_function = your_input_function`
+4. Run `python3 ./main.py ./path_to_your_data_file`
+
+
+
 # Assumptions
-1. It's written that filter just takes an input function. For example length, which returns an int. 
+1. It's written that filter just takes an input function. For example it takes length, which returns an int. 
 ```
 def length(trajectory):
   return len(trajectory)
@@ -34,6 +45,4 @@ obj.plot(list_segments)
 ```
 
 
-# How to run it
-1. Run it with data.npy path
 

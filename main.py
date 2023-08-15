@@ -1,7 +1,11 @@
+import sys
+
 from framework import vehicle_data, input_function
 
 if __name__ == '__main__':
-    data_file = './data.npy'  # pass by command line interface
+    print(sys.argv)
+
+    data_file = sys.argv[1]
     obj = vehicle_data.VehicleData(data_file)
 
 
