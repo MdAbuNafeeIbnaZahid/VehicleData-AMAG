@@ -12,7 +12,9 @@ And change the line from `input_function = len_is_69` to `input_function = your_
 
 
 # Assumptions
-1. It's written that filter just takes an input function. For example it takes length, which returns an int. 
+## 1.
+
+It's written that filter just takes an input function. For example it takes length, which returns an int. 
 ```
 def length(trajectory):
   return len(trajectory)
@@ -29,7 +31,8 @@ def length_is_5(trajectory):
 
 list_of_segments = obj.filter(length_is_5)
 ```
-2. It's written that the plot also needs to have the ability to plot only filtered
+## 2
+It's written that the plot also needs to have the ability to plot only filtered
 segments.
  ```
 list_of_lats_lngs = obj.filter()
