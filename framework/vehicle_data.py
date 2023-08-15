@@ -1,4 +1,6 @@
+import matplotlib.pyplot as plt
 import numpy
+from matplotlib import pyplot
 
 
 class VehicleData:
@@ -24,5 +26,20 @@ class VehicleData:
         if id not in self.segments:
             return None
         return self.segments[id]
+
+    def filter(self, input_func):
+        to_return_segment_list = []
+        for id in self.segments:
+            if input_func(self.segments[id]):
+                to_return_segment_list.append(self.segments[id])
+        return to_return_segment_list
+
+    def plot(self, list_of_segments):
+        pyplot.title("demo AMAG")
+        for seg in list_of_segments:
+            x = list(zip(*seg))[0]
+            y = list(zip(*seg))[1]
+            plt.plot(x, y)
+        plt.show()
 
 
