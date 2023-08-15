@@ -4,10 +4,11 @@
 # How to run it
 Download the repo.
 1. You need python3 for running the repo.
-2. Run `pip install -r requirement.txt`
-3. Modify / Write your input function inside the file `./framework/input_function.py`. 
+2. Download and come to the root folder of the repo.
+3. Run `pip install -r requirement.txt`
+4. Modify / Write your input function inside the file `./framework/input_function.py`. 
 And change the line from `input_function = len_is_69` to `input_function = your_input_function`
-4. Run `python3 ./main.py ./path_to_your_data_file`
+5. Run `python3 ./main.py ./path_to_your_data_file`
 
 
 

@@ -17,14 +17,13 @@ class VehicleData:
             if id not in self.segments:
                 self.segments[id] = []
             self.segments[id].append((x, y))
-        for id in self.segments:
-            print("id = ", id, ", len = ", len(self.segments[id]) )
-            if len(self.segments[id]) == 0:
+        for id in list(self.segments.keys()):
+            if len(self.segments[id]) == 1:
                 del self.segments[id]
 
     def by_id(self, id):
-        if id not in self.segments:
-            return None
+        if (id not in self.segments) or len(self.segments[id]) == 1:
+            return []
         return self.segments[id]
 
     def filter(self, input_func):
