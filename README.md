@@ -35,5 +35,5 @@ obj.plot(list_segments)
 
 
 # How to run it
-
+1. Run it with data.npy path
 

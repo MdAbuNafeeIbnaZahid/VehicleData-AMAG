@@ -19,6 +19,7 @@ class VehicleData:
                 self.segments[id] = []
             self.segments[id].append((x, y))
         for id in self.segments:
+            print("id = ", id, ", len = ", len(self.segments[id]) )
             if len(self.segments[id]) == 0:
                 del self.segments[id]
 
@@ -41,5 +42,3 @@ class VehicleData:
             y = list(zip(*seg))[1]
             plt.plot(x, y)
         plt.show()
-
-
