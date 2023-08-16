@@ -12,7 +12,7 @@ And change the line from `input_function = len_is_69` to `input_function = your_
 
 # How to run unit test
 
-1. Need to run `python -m unittest`
+1. Need to run `python -m unittest`  (It's added in gitlab ci as well)
 
 # Assumptions
 ## 1.
