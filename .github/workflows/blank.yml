@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your project.
 
       - name: Run tests
-        run: python -m python -m unittest
+        run: python -m unittest
