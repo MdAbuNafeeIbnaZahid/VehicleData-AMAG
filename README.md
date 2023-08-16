@@ -9,6 +9,7 @@ Download the repo.
 4. Modify / Write your input function inside the file `./framework/input_function.py`. 
 And change the line from `input_function = len_is_69` to `input_function = your_input_function`
 5. Run `python3 ./main.py ./path_to_your_data_file`
+For our case `python3 ./main.py ./data.npy`
 
 # How to run unit test
 
