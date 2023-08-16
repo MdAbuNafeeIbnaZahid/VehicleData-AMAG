@@ -24,11 +24,9 @@ class TestVehicleData(TestCase):
     def test_filter_2_values(self):
         def len_is_2(trajectory):
             return len(trajectory) == 2
-
         assert (self.v_data.filter(len_is_2) == [[(2, 3), (3, 2)]])
 
     def test_filter_1_value_no_found(self):
         def len_is_1(trajectory):
             return len(trajectory) == 1
-
         assert (self.v_data.filter(len_is_1) == [])  # only one datapoint. Got removed
