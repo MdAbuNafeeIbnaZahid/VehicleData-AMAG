@@ -10,7 +10,9 @@ Download the repo.
 And change the line from `input_function = len_is_69` to `input_function = your_input_function`
 5. Run `python3 ./main.py ./path_to_your_data_file`
 
+# How to run unit test
 
+1. Need to run `python -m unittest`
 
 # Assumptions
 ## 1.
